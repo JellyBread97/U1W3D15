@@ -1,0 +1,68 @@
+/*CSS EXERCISES
+11) Give a maximum width to the body and center it into the page
+12) Set every h1 to be centered
+13) Change the color of each link in the page
+14) Create a class with a border assigned to it
+15) Set the previously created table to have rounded corners
+16) Add a margin between every paragraph
+17) Create a class which changes font size and text weight when applied
+18) Create a class to hide a piece of content
+19) Add a green border to each <td>
+20) Add a dotted red border to each <tr> (note: <tr> does not accept a border property)
+*/
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+body {
+  max-width: 40vw;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: darkgreen;
+}
+
+.class-border {
+  border: solid black;
+}
+
+table {
+  border: solid black;
+  border-radius: 10px;
+}
+
+p {
+  margin: 10px;
+}
+
+.change-font {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+td {
+  border-color: green;
+}
+
+/*20) It works but I'm not sure if it should work like this because I'm losing border of the whole table with border radius like this*/
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-style: dotted;
+  border-color: red;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <!--
+        HTML EXERCISES
+        1) Create a title for this webpage
+        2) Create a heading of your choice
+        3) Create an ordered list with some list items into it
+        4) Create a table with 5 columns and 4 rows
+        5) Add an image to each second cell of every row
+        6) Add a anchor link for every image
+        7) Merge together 2 table cells
+        8) Divide the page using a horizontal line
+        9) Create a container with a nested paragraph and a nested unordered list
+        10) Create a footer with some information about the page creator
+        /* WHEN YOU ARE FINISHED
+    -->
+
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Exercise</title>
+  </head>
+
+  <body>
+    <h1 id="heading">Martin's exercise page!</h1>
+
+    <ul>
+      <li>Socks</li>
+      <li>Socks!</li>
+      <li>Socks!!!</li>
+      <li>SOCKS!!!!!</li>
+    </ul>
+
+    <table id="table" class="table">
+      <tr>
+        <th>Accessories</th>
+        <th>Picture</th>
+        <th>Price</th>
+        <th>Brand</th>
+        <th>Size Available</th>
+      </tr>
+
+      <tr>
+        <td>Socks</td>
+        <td>
+          <img src="./assets/Socks1.jpg" />
+          <br />
+          <a
+            href="https://www.woox.cz/cs/doplnky/vsichni/ponozky/merino-ponozky-taupo-mais/id=2125807"
+            target="_blank"
+            >Take me to E-shop</a
+          >
+        </td>
+        <td rowspan="2">£12</td>
+        <td>WOOX</td>
+        <td>UK 7-12</td>
+      </tr>
+
+      <tr>
+        <td>Socks</td>
+        <td>
+          <img src="./assets/Socks2.jpg" />
+          <br />
+          <a
+            href="https://www.woox.cz/cs/doplnky/vsichni/ponozky/ponozky-soccus-socius-luteus/id=1915808"
+            target="_blank"
+            >Take me to E-shop</a
+          >
+        </td>
+        <!--  <td>£13</td>  -->
+        <td>WOOX</td>
+        <td>UK 6-10</td>
+      </tr>
+
+      <tr>
+        <td>Socks</td>
+        <td>
+          <img src="./assets/Socks3.jpg" />
+          <br />
+          <a
+            href="https://www.woox.cz/cs/doplnky/vsichni/ponozky/ponozky-soccus-gaudium-luteus/id=1925804"
+            target="_blank"
+            >Take me to E-shop</a
+          >
+        </td>
+        <td>£11</td>
+        <td>WOOX</td>
+        <td>UK 8</td>
+      </tr>
+
+      <tr>
+        <td>Socks</td>
+        <td>
+          <img src="./assets/Socks4.jpg" />
+          <br />
+          <a
+            href="https://www.woox.cz/cs/doplnky/vsichni/ponozky/ponozky-soccus-gaudium-rubem/id=1925805"
+            target="_blank"
+            >Take me to E-shop</a
+          >
+        </td>
+        <td>£14</td>
+        <td>WOOX</td>
+        <td>UK 8-12.5</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <div id="container">
+      <div class="nestedParagraph">
+        <p>Paragraph for exercise 9</p>
+      </div>
+      <ol>
+        <ul id="list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+      </ol>
+    </div>
+
+    <input type="button" value="Hide all images" onclick="hideImages()" />
+    <br /><br />
+
+    <input
+      type="button"
+      value="Hide/Show the table"
+      onclick="showOrHideTable()"
+    />
+    <br /><br />
+
+    <input
+      type="button"
+      value="Delete random value"
+      onclick="deleteRandomTd()"
+    />
+    <br /><br />
+
+    <div id="newTable" class="table"></div>
+
+    <footer>
+      This exercise was not as hard as I expected it to be
+      <br />
+      I think I did quite well
+    </footer>
+  </body>
+</html>
