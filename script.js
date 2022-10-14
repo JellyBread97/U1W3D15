@@ -151,11 +151,11 @@ function changeHeading() {
 }
 
 //35
-function addRow() {
-  let tableNode = document.getElementById("table");
-  let row = tableNode.insertRow();
-  row.innerText = "New row EX35";
-}
+let addRow = function () {
+  let table = document.querySelector("table");
+  let row = document.createElement("tr");
+  table.appendChild(row);
+};
 
 //36
 function addClass() {
